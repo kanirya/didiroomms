@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "105613704269",
+    "firebase_url": "https://didipartner-5caed-default-rtdb.firebaseio.com",
+    "project_id": "didipartner-5caed",
+    "storage_bucket": "didipartner-5caed.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:105613704269:android:e7c4fda1b6c9b04476f004",
+        "android_client_info": {
+          "package_name": "com.example.didipartner"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_T4f1mo4rUMiife5t96TnQ29vXhdW-5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:105613704269:android:ff385cbf327897b876f004",
+        "android_client_info": {
+          "package_name": "com.example.didiroomms"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_T4f1mo4rUMiife5t96TnQ29vXhdW-5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,33 @@
+// Root-level build.gradle file
+buildscript {
+    repositories {
+        google()  // Google repository to fetch Firebase and other dependencies
+        mavenCentral()  // Maven Central repository for other dependencies
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.0.0'  // Android build tools
+        classpath 'com.google.gms:google-services:4.3.15'  // Google services plugin for Firebase
+    }
+}
+
+allprojects {
+    repositories {
+        google()  // Google repository
+        mavenCentral()  // Maven Central repository
+    }
+}
+
+rootProject.buildDir = "../build"  // Root build directory
+
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"  // Subproject build directories
+}
+
+subprojects {
+    project.evaluationDependsOn(":app")  // Ensures ':app' module is evaluated first
+}
+
+// Clean task to delete build directories
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
